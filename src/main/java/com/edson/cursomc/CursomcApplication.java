@@ -106,11 +106,11 @@ public class CursomcApplication implements CommandLineRunner {
 		p6.getCategorias().addAll(Arrays.asList(cat3));
 		p7.getCategorias().addAll(Arrays.asList(cat4));
 		p8.getCategorias().addAll(Arrays.asList(cat5));
-		p9.getCategorias().addAll(Arrays.asList(cat6));
+		p9.getCategorias().addAll(Arrays.asList(cat8));
 		p10.getCategorias().addAll(Arrays.asList(cat6));
 		p11.getCategorias().addAll(Arrays.asList(cat7));
 		
-		categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7));
+		categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7, cat8));
 		produtoRepository.saveAll(Arrays.asList(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11));
 		
 		Estado est1 = new Estado(null, "Sofala");

@@ -20,7 +20,6 @@ public class Categoria implements Serializable {
 	private Integer id;
 	private String nome;
 	
-	//@JsonManagedReference Removemos O Manage Reference em todas classes de Dominio
 	@ManyToMany(mappedBy="categorias")
 	private List<Produto> produtos = new ArrayList<>();
 	
