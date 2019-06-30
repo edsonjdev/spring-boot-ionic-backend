@@ -14,7 +14,6 @@ import com.edson.cursomc.domain.enums.EstadoPagamento;
 import com.edson.cursomc.repositories.ItemPedidoRepository;
 import com.edson.cursomc.repositories.PagamentoRepository;
 import com.edson.cursomc.repositories.PedidoRepository;
-import com.edson.cursomc.repositories.ProdutoRepository;
 import com.edson.cursomc.services.exceptions.ObjectNotFoundException;
 
 @Service
@@ -28,9 +27,6 @@ public class PedidoService {
 
 	@Autowired
 	private PagamentoRepository pagamentoRepository;
-	
-	@Autowired
-	private ProdutoRepository produtoRepository;
 	
 	@Autowired
 	private ProdutoService produtoService;

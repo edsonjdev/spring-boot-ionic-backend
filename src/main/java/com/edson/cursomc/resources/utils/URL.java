@@ -11,7 +11,6 @@ public class URL {
 		try {
 			return URLDecoder.decode(s, "UTF-8");
 		} catch (UnsupportedEncodingException e) {
-			// TODO Auto-generated catch block
 			return "";
 		}
 	}

@@ -6,6 +6,7 @@ import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -18,13 +19,13 @@ import com.edson.cursomc.domain.Pedido;
 public abstract class AbstractEmailService implements EmailService {
 
 	@Value("${default.sender}")
-	private String sender;
+	public String sender;
 	
 	@Autowired
 	private TemplateEngine templateEngine;
 	
 	@Autowired
-	public JavaMailSender javaMailSender;
+	private JavaMailSender javaMailSender;
 	
 	@Override
 	public void sendOrderConfirmationEmail(Pedido obj) {
