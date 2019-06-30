@@ -1,6 +1,6 @@
 package com.edson.cursomc.services;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
@@ -68,7 +68,5 @@ public abstract class AbstractEmailService implements EmailService {
 		mmh.setText(htmlFromTemplatePedido(obj), true);
 		return mimeMessage;
 	}
-	
-
 	
 }
